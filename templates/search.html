@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Search Results</title>
+</head>
+<body>
+    <h1>YouTube Search Results</h1>
+    <form action="/" method="post">
+        <input type="text" name="search_term" placeholder="Search again...">
+        <input type="submit" value="Search">
+    </form>
+
+    {% for video in videos %}
+        <div>
+            <h2>{{ video['snippet']['title'] }}</h2>
+            <a href="https://www.youtube.com/watch?v={{ video['id']['videoId'] }}">Watch on YouTube</a>
+            <p>{{ video['snippet']['description'] }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

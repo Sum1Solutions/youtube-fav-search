@@ -1,0 +1,7 @@
+env/
+client_secrets.json
+*.pyc
+.env
+__pycache__/
+concatonated.txt
+concat.py
