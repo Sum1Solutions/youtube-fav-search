@@ -3,5 +3,5 @@ client_secrets.json
 *.pyc
 .env
 __pycache__/
-concatonated.txt
+concatenated.txt
 concat.py
